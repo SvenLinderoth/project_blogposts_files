@@ -1,0 +1,150 @@
+#posts-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
+  gap: 35px;
+} .blog-post h2 {
+  color: var(--color-main-text);
+} .blog-post .author {
+  position: absolute;
+  top: 35px;
+  opacity: .8;
+}
+.blog-post .delete_post {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  background: var(--color-temp);
+  color: rgb(255, 98, 98);
+  border-radius: 20px;
+  border: 1px solid var(--color-temp);
+}
+.blog-post .edit_post {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+  width: 50px;
+  background: var(--color-temp);
+  color: white;
+  border-radius: 20px;
+  border: 1px solid var(--color-temp);
+}
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 10px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--color-temp);
+    backdrop-filter: blur(12px);
+    border-radius: 9px;
+
+    color: var(--color-temp);
+    width: 560px;
+    height: fit-content;
+}
+
+  /* new post creation */
+  #new-post-form {
+    display: block;
+    position: fixed;
+    background: white;
+    top: 50%;
+    left: 44%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 100;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+
+    border: 1px solid var(--color-main);
+    border-radius: 15px;
+
+    animation: slideUp 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translate(-50%, 100%) scale(0);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  h1 {
+    font-family: var(--font-family);
+    color: var(--h1);
+  }
+  #new-post-form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--color-temp);
+    text-align: center;
+    font-family: var(--font-family);
+  }
+  #new-post-form label {
+    color: var(--color-temp);
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px;
+    font-family: var(--font-family);
+  }
+  #new-post-form input[type="text"],
+  #new-post-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: var(--color-temp);
+    border: 1px solid var(--color-temp);
+    box-sizing: border-box;
+  }
+  #new-post-form textarea {
+    height: 120px;
+    max-height: 240px;
+    max-width: 500px;
+  }
+  #new-post-form button {
+    background-color: var(--color-temp);
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 25%;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 15px;
+  }
+    /* Add a hover effect for buttons */
+    button:hover {
+      opacity: 0.8;
+    }
+    
+    .tooltip {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      padding: 5px 10px;
+      background-color: #000;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+    
+    .form-group input:focus + .tooltip,
+    .form-group textarea:focus + .tooltip {
+      display: block;
+    }
+    
+  
+
+  
+  

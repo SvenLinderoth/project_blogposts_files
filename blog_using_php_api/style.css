@@ -1,0 +1,106 @@
+/* -------body------- */
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+:root {
+  --font-family: 'Shantell Sans', cursive;
+  --color-main: #cffdfa;
+  --color-main-text: rgb(83, 23, 80);
+  --color-temp: rgb(46, 61, 99);
+  --background: rgb(239, 239, 239);
+  --h1: rgb(46, 61, 99);
+}
+body {
+  /* height: 1200px; */
+  background: var(--background);
+}
+/* -------------- */
+
+#logs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-bottom: solid 1px white;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  background-color: rgb(78, 78, 78);
+  z-index: 1;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+nav li {
+  display: block;
+}
+nav a {
+  display: block;
+  padding: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  opacity: .5;
+}
+nav img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 64px;
+  transition: all .2s ease-in-out;
+  border-bottom: solid 1px white; 
+  border-bottom-left-radius: 60%;
+}
+nav img:hover {
+  scale: .98;
+  border-bottom-left-radius: 0;
+}
+#logout_btn {
+  background: var(--color-main);
+  border: none;
+  font-family: var(--font-family);
+}
+#logout_btn:hover {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.login_btn:hover {
+  text-decoration: underline;
+}
+.mode {
+  width: 30px;
+  height: 30px;
+  border-radius: 120px;
+  border: none;
+} .mode:hover {cursor: pointer;}
+.grey {background: rgb(239, 239, 239);}
+.black {background: #36454F;}
+.yellow {background: rgb(255, 255, 38);}
+.pink {background: pink;}
+#custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  flex-direction: row;
+}
+  

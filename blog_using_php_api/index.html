@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blogposts.css">
+    <!-- scripts -->
+    <script src="mode.js"></script>
+    <script src="auth_user.js"></script>
+    <script src="blogposts.js"></script>
+    <title>Home blog</title>
+</head>
+<body>
+  <script>checkUser();</script>
+
+    <nav> 
+      <div id="logs">
+        <a href="login.html" class="login_btn"> Log In </a>
+        <button id="logout_btn" onclick="clearUser()">Log Out</button>
+      </div>
+        <ul>
+          <li><a href="index.html"> <img src="images/home.png" alt="Home" class="nav_img"></a></li>
+          <li><a href="create_post.html"> <img src="images/write.png" alt="Home" class="nav_img"> </a></li>
+          <!-- <li><a href="login.html"> Log In </a></li> -->
+        </ul>
+        <div id="custom">
+
+        <button class="mode grey" onclick="darkmode('rgb(239, 239, 239)')"></button>
+        <button class="mode black" onclick="darkmode('#36454F')"></button>
+        <button class="mode yellow" onclick="darkmode('rgb(255, 255, 38)')"></button>
+        <button class="mode pink" onclick="darkmode('pink')"></button>
+      </div>
+      </nav>
+      
+    <div id="posts-container">
+      <h1>Stay up to Date</h1>
+      <!-- Existing posts will be added here using JavaScript -->
+    </div>
+
+</body>
+</html>

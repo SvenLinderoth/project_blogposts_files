@@ -1,0 +1,14 @@
+{
+  "name": "socialproj_apicon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^23.1.0"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <!-- scripts -->
+    <script src="auth_user.js"></script>
+    <script src="mode.js"></script>
+
+    <script> 
+       // When the user navigates to page
+       //if userid already exists, redirect the user to previous page
+      if (localStorage.getItem('userId')) {
+        // Redirect the user to the login page
+        alert('youre already logged in');
+        history.back();
+      }
+    </script>
+    <script src="login.js"></script>
+
+    <title>Home</title>
+</head>
+<body>
+  <nav> 
+    <div id="logs">
+      <a href="login.html" class="login_btn"> Log In </a>
+      <button id="logout_btn" onclick="clearUser()">Log Out</button>
+    </div>
+      <ul>
+        <li><a href="index.html"> <img src="images/home.png" alt="Home" class="nav_img"></a></li>
+        <li><a href="create_post.html"> <img src="images/write.png" alt="Home" class="nav_img"> </a></li>
+      </ul>
+      <div id="custom">
+
+        <button class="mode grey" onclick="darkmode('rgb(239, 239, 239)')"></button>
+        <button class="mode black" onclick="darkmode('#36454F')"></button>
+        <button class="mode yellow" onclick="darkmode('rgb(255, 255, 38)')"></button>
+        <button class="mode pink" onclick="darkmode('pink')"></button>
+      </div>
+    </nav>
+
+<div id="sideimg"> <img src="./images/heartside.png" alt="sideimg"></div>
+    <form id="login-form">
+        <div class="imgcontainer">
+            <img src="user.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="container">
+            <div class="input_div">
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            </div>
+            <div class="input_div">
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+            </div>
+            <button type="submit" id="login_btn">Login</button>
+            <a id="signup" href="" onclick="alert('notfunctional, please use: admin for both username and password')">Not a member? Sign Up!</a>
+          </div>
+    </form>
+    <p id="message"></p>
+</body>
+</html>

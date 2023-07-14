@@ -1,0 +1,77 @@
+/* -------Form for login------- */
+form {
+    /* border: 1px solid var(--color-main); */
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    border-radius: 0 15px 15px 0;
+    box-shadow: 1px 1px 5px black;
+    backdrop-filter: blur(15px);
+  }
+  label {
+    color: var(--h1);
+    font-family: var(--font-family);
+  }
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid var(--h1);
+    color: var(--color-temp);
+    box-sizing: border-box;
+    border-radius: 12px;
+  }
+  /* Set a style for all buttons */
+#login_btn {
+    background-color: var(--color-temp);
+    color: white;
+    padding: 14px 20px;
+    margin: 25px 25%;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 15px;
+  }
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  /* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  /* Avatar image */
+.avatar {
+    width: 10%;
+    border-radius: 50%;
+}
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+#sideimg {
+    position: absolute;
+    right: 10%;
+    width: 1200px;
+}
+#sideimg img {
+    width: 100%;
+    height: auto;
+}
+.input_div {
+    width: 350px;
+}
